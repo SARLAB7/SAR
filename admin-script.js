@@ -2,6 +2,7 @@ import { db, auth } from './firebase-config.js';
 import { collection, onSnapshot, query, orderBy, doc, deleteDoc, updateDoc, serverTimestamp, addDoc } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
 import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
 
+
 const CORREO_MASTER = "cb01grupo@gmail.com";
 const correosAutorizados = [CORREO_MASTER, "kelly.araujotafur@gmail.com"];
 

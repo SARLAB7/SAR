@@ -133,10 +133,10 @@ window.enviarPedido = async () => {
             cliente, tipo, items: itemsParaEnviar, total, estado: "pendiente", timestamp: serverTimestamp() 
         });
         if (quiereWA) {
-            let msgWA = `*NUEVO PEDIDO IKU*%0A*Cliente:* ${cliente}%0A------------------%0A`;
+            let msgWA = `*NUEVO PEDIDO SAR*%0A*Cliente:* ${cliente}%0A------------------%0A`;
             carrito.forEach(i => { msgWA += `• ${i.cantidad}x ${i.nombre} ${i.excluidos.length > 0 ? `(SIN: ${i.excluidos.join(', ')})` : ''}%0A`; });
             msgWA += `------------------%0A*Total:* $${total.toLocaleString()}`;
-            window.open(`https://wa.me/573113342309?text=${msgWA}`);
+            window.open(`https://wa.me/573017177781?text=${msgWA}`);
         }
         btn.innerHTML = "¡Pedido enviado! ✅";
         setTimeout(() => {
